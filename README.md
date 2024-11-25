@@ -50,14 +50,14 @@ To reproduce the results:
 
 ## Environment Setup
 
-To set up the project, follow these steps:
+To set up the project, follow these steps.
 
 1. Clone the repository at your desired path, then open the folder:
    ```bash
       git clone https://github.com/yasamangs/Flight-Price-Prediction.git
       cd Flight-Price-Prediction
    ```
-2. Create a Conda environment and activate it::
+2. Create a Conda environment and activate it:
    ```bash
       conda create --name flight-price-env python=3.8
       conda activate flight-price-env
