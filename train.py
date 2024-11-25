@@ -13,12 +13,8 @@ from tqdm import tqdm
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
-# Load the dataset
-df = pd.read_csv("flight.csv")
 
 # Define preprocessing function
-
-
 def preprocess_data(
     df,
     drop_columns=None,
@@ -59,6 +55,10 @@ def preprocess_data(
 
 
 if __name__ == "__main__":
+
+    # Load the dataset
+    df = pd.read_csv("flight.csv")
+
     # EDA insights
     categorical = list(df.dtypes[df.dtypes == 'object'].index)
     categorical.remove('flight')  # Remove unique identifier
