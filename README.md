@@ -35,7 +35,7 @@ Multiple models were trained and evaluated:
 3. **Random Forest Regressor**: Improved performance through ensemble learning.
 4. **Gradient Boosting Regressor**: Enhanced accuracy by focusing on errors of previous models.
 
-Hyperparameter tuning was performed for each model to optimize performance.
+Hyperparameter tuning was performed for Random Forest Regressor model that had the best performance among them to optimize performance.
 
 ## Exporting Notebook to Script
 
@@ -45,14 +45,61 @@ The logic for training the model has been exported to a separate Python script (
 
 To reproduce the results:
 
-1. **Data Access**: The dataset is available in the repository under the `data` directory.
-2. **Execution**: Run the Jupyter notebook (`Flight_Price_Prediction.ipynb`) or the training script (`train_model.py`) without errors.
+1. **Data Access**: The dataset is available in the repository under the name flight.csv.
+2. **Execution**: Run the Jupyter notebook (`notebook.ipynb`) or the training script (`train.py`) without errors.
 
-## Installation
+## Environment Setup
 
 To set up the project, follow these steps:
 
-1. Clone the repository:
+1. I
+
+1. Clone the repository at your desired path, then open the folder:
    ```bash
-   git clone https://github.com/yasamangs/Flight-Price-Prediction.git
-   cd Flight-Price-Prediction
+      git clone https://github.com/yasamangs/Flight-Price-Prediction.git
+      cd Flight-Price-Prediction
+   ```
+2. Create a Conda environment and activate it::
+   ```bash
+      conda create --name flight-price-env python=3.8
+      conda activate flight-price-env
+   ```
+3. Install the required dependencies:
+   ```bash
+      pip install -r requirements.txt
+   ```
+
+## Running the Model Training Script
+To train the model using the provided script, execute:
+   ```bash
+      python train.py
+   ```
+
+## Containerization
+
+A Dockerfile is provided to containerize the application.
+
+1. Build the Docker Image
+   - With Docker installed on your system, build the image using:
+   ```bash
+   docker build -t flight-price-prediction .
+   ```
+2. Start the Prediction Service Container: 
+   ```bash
+   docker run -it --rm -p 9696:9696 flight-price-prediction
+   ```
+The container will listen for prediction requests on port 9696.
+
+Testing the Prediction Service
+Open another terminal and run the following command at the root of the project folder to test the prediction service:
+   ```bash
+   python predict_test.py
+   ```
+
+# License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+# Acknowledgments
+- **Kaggle** for providing the dataset.  
+- **Scikit-learn** for machine learning tools.  
+- **Flask** for the web framework.    
