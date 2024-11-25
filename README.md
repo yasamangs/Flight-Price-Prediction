@@ -52,8 +52,6 @@ To reproduce the results:
 
 To set up the project, follow these steps:
 
-1. I
-
 1. Clone the repository at your desired path, then open the folder:
    ```bash
       git clone https://github.com/yasamangs/Flight-Price-Prediction.git
