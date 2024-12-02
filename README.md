@@ -100,7 +100,8 @@ The API will start locally at: [ http://127.0.0.1:5000/](http://127.0.0.1:9696)
 
 ### input example: 
 
-```json {
+```json
+{
   "Airline": "IndiGo",
   "Date_of_Journey": "2021-03-27",
   "Source": "Delhi",
@@ -114,7 +115,8 @@ The API will start locally at: [ http://127.0.0.1:5000/](http://127.0.0.1:9696)
 ```
 
 Output Example:
-```json {
+```json
+{
   "prediction": 4500
 }
 ```
