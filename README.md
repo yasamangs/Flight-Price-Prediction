@@ -1,4 +1,7 @@
 # Flight Price Prediction
+This projet is a Midterm project of [ML Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) by [Alexey Grigorev](https://github.com/alexeygrigorev)
+
+# Overview
 
 This project predicts flight prices based on various features such as airline, departure time, arrival time, duration, and number of stops. Accurate price predictions can assist travelers in making informed decisions and help airlines optimize their pricing strategies.
 
