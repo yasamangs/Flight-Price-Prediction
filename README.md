@@ -85,7 +85,6 @@ To train the model using the provided script, execute:
 The Project includes a Flask API (`predict.py`) for predicting flight prices using a trained machine learning model. The API provides a simple way to interact with the model via HTTP requests.
 
 1. Start the Flask Server
- Running the Flask app
 
  ```bash
    python predict.py
@@ -99,8 +98,9 @@ The API will start locally at: [ http://127.0.0.1:5000/](http://127.0.0.1:9696)
    - Method: POST
    - Content-Type: application/json
 
-input example: 
-   {
+### input example: 
+
+```json {
   "Airline": "IndiGo",
   "Date_of_Journey": "2021-03-27",
   "Source": "Delhi",
@@ -111,13 +111,15 @@ input example:
   "Duration": "2h 50m",
   "Total_Stops": "1 stop"
 }
+```
 
 Output Example:
-{
+```json {
   "prediction": 4500
 }
+```
 
-
+Check `predict-test.py` file as an example of how to send a request using Python.
 
 
 ## Containerization
