@@ -3,22 +3,26 @@ This projet is a Midterm project of [ML Zoomcamp](https://github.com/DataTalksCl
 
 # Overview
 
-This project predicts flight prices based on various features such as airline, departure time, arrival time, duration, and number of stops. Accurate price predictions can assist travelers in making informed decisions and help airlines optimize their pricing strategies.
-
-## Problem Description
-
-Airfare prices fluctuate due to multiple factors, making it challenging for travelers to find the best deals. This project addresses the problem by developing a machine learning model that predicts flight prices, enabling users to anticipate costs and plan accordingly.
+Airfare prices fluctuate due to multiple factors, making it challenging for travelers to find the best deals. This project predicts flight prices based on various features, enabling users to anticipate costs and plan accordingly. Accurate price predictions can assist travelers in making informed decisions and help airlines optimize their pricing strategies.
 
 ## Dataset
 
 The dataset used in this project is derived from [Kaggle's Flight Price Prediction Dataset](https://www.kaggle.com/code/azizashfak/flight-price-prediction-accuracy-98-61). It contains information about various flight details such as:
 
-- Airline
-- Source and destination
-- Duration
-- Number of stops
-- Departure and arrival times
-- Flight prices (target variable)
+| Feature            | Description                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------|
+| **Airline**        | The name of the airline operating the flight.                                                |
+| **Date_of_Journey**| The departure date of the journey.                                                           |
+| **Source**         | The departure city or airport.                                                               |
+| **Destination**    | The arrival city or airport.                                                                 |
+| **Route**          | The flight path from the source to the destination, including any layovers.                  |
+| **Dep_Time**       | The departure time of the flight.                                                            |
+| **Arrival_Time**   | The arrival time of the flight.                                                              |
+| **Duration**       | The total duration of the flight.                                                            |
+| **Total_Stops**    | The number of stops or layovers during the flight.                                           |
+| **Additional_Info**| Any extra information about the flight, such as in-flight amenities or restrictions.         |
+| **Price**          | The ticket price of the flight.                                                              |
+
 
 ## Exploratory Data Analysis (EDA)
 
