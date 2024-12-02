@@ -1,5 +1,5 @@
 # Flight Price Prediction
-This projet is a Midterm project of [ML Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) by [Alexey Grigorev](https://github.com/alexeygrigorev)
+This repository contains files of a Midterm project of [ML Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) by [Alexey Grigorev](https://github.com/alexeygrigorev)
 
 # Overview
 
